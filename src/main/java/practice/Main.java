@@ -1,7 +1,4 @@
 package practice;
-
-import practice.EmailList;
-
 import java.util.Scanner;
 
 public class Main {
@@ -30,15 +27,14 @@ public class Main {
             if (input.equals("0")) {
                 break;
             }
+
             String[] splitInput = input.split(" ", 2);
             switch (splitInput[0]) {
                 case "ADD" -> emailList.add(splitInput[1]);
                 case "LIST" -> emailList.getSortedEmails();
                 default -> System.out.println(WRONG_EMAIL_ANSWER);
             }
-            
             //TODO: write code here
-            
         }
     }
 }

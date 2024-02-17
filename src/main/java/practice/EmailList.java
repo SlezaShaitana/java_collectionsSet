@@ -1,6 +1,4 @@
 package practice;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeSet;
 
@@ -17,7 +15,6 @@ public class EmailList {
         } else {
             System.out.println(Main.WRONG_EMAIL_ANSWER);
         }
-
     }
 
     public List<String> getSortedEmails() {
@@ -27,5 +24,4 @@ public class EmailList {
         }
         return treeSetEmail.stream().toList();
     }
-
 }
